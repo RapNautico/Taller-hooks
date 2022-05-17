@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Ejemplo from './ejemplo';
+import Example from './useEfect1';
+import FriendStatus from './useEfect2';
+import ShowWindowWidth from './useEfect2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <Ejemplo/> */}
+    {/* <Example/> */}
+    <ShowWindowWidth/>
   </React.StrictMode>
 );
 

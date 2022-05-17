@@ -1,0 +1,53 @@
+#Qué son los Hooks
+Permite trabajar sin clases haciendo que el aprendizaje en react sea más facil
+
+#Hooks mas usados
+
+* useState
+--------------------------------------------------
+const [state, setState] = useState(initialState);
+
+Devuelve un valor con estado y una función para actualizarlo.
+--------------------------------------------------
+* useEffect
+--------------------------------------------------
+useEffect(() => {
+  const subscription = props.source.subscribe();
+  return () => {
+    // Limpiar la suscripción
+    subscription.unsubscribe();
+  };
+});
+
+Con useEffect se pueden cambiar datos despues del renderizado de un componente
+--------------------------------------------------
+* useContext
+--------------------------------------------------
+const value = useContext(MyContext);
+
+Acepta un objeto de contexto (el valor devuelto de React.createContext)
+ y devuelve el valor de contexto actual
+--------------------------------------------------
+#Los siguientes Hooks son variantes de los básicos de la sección
+ anterior o solo son necesarios para casos extremos específicos.
+--------------------------------------------------
+useReducer
+--------------------
+useCallback
+--------------------
+useMemo
+--------------------
+useRef
+--------------------
+useImperativeHandle
+--------------------
+useLayoutEffect
+--------------------
+useDebugValue
+--------------------
+useDeferredValue
+--------------------
+useTransition
+--------------------
+useId
+--------------------------------------------------
